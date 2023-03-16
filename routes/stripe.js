@@ -1,4 +1,4 @@
-const User = require("../models/User1");
+const User = require("../models/User");
 const {query} = require("express");
 const router = require("express").Router();
 const KEY = "sk_test_51MmM5pJSv3766OLssKolOQuj8PLLChdoQ8ZBhF4m483HYMnEte8FD1dFH3PuWdzv7TYZpWMLvySLd7Di6I78eeJ000Ec9Mz32V";

@@ -7,6 +7,7 @@ const userRoute = require("./routes/user")
 const authRoute = require("./routes/auth")
 const productRoute = require("./routes/product")
 const cors = require("cors");
+const stripeRoute = require("./routes/stripe");
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use("/api/orders", orderRoute);
 app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/products", productRoute);
+app.use("/api/checkout", stripeRoute);
 app.get('/', (req, res) => {
     res.send('Welcome to Full Stack Development!')
 });
